@@ -10,3 +10,4 @@ venv
 .gitignore
 .pytest_cache
 *.log
+db/ 
