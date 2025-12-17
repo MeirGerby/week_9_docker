@@ -21,7 +21,7 @@ docker volume create fastapi-db
 ### Build the image
 
 ```bash
-
+docker build -t shopping-server1:v1 .
 ```
 
 ### Run the container
