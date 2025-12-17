@@ -7,7 +7,7 @@ Fill in the Docker commands you used to complete the test.
 ### Create the volume
 
 ```bash
-
+docker volume create fastapi-db
 ```
 
 ### Seed the volume (via Docker Desktop)
