@@ -24,10 +24,10 @@ class Item(BaseModel):
 @app.get("/items")
 def get_items():
     try:
-        with open("shopping_list.json", "r") as f:
+        with open(r"server2\db\shopping_list.json", "r") as f:
             data = json.load(f)
     except:
-        with open("shopping_list.json", "w") as f:
+        with open(r"server2\db\shopping_list.json", "w") as f:
             f.write('[]')
     return data 
 
@@ -45,7 +45,7 @@ def create_item(item: CreateItem):
     next_id += 1
 
     json_str = json.dumps(items, indent=4)
-    with open("shopping_list.json", "w") as f:
+    with open(r"server2\db\shopping_list.json", "w") as f:
         f.write(json_str)
     
     return new_item 

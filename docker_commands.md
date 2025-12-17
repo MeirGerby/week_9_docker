@@ -27,7 +27,7 @@ docker build -t shopping-server1:v1 .
 ### Run the container
 
 ```bash
-
+docker run -d --name server1_test -v fastapi-db:/app/db shopping-server1:v1
 ```
 
 ## Server 2
@@ -35,12 +35,12 @@ docker build -t shopping-server1:v1 .
 ### Build the image
 
 ```bash
-
+docker build -t shopping-server2:v1
 ```
 
 ### Run the container
 
 ```bash
-
+docker run -d --name server2_test -v fastapi-db:/app/db shopping-server2:v1
 ```
 
